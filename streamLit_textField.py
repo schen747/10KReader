@@ -18,8 +18,8 @@ from langchain.callbacks import get_openai_callback
 
 def main():
     load_dotenv()
-    #print (os.getenv("OPENAI_API_KEY"))
-    #OPENAI_API_KEY = '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'
+    print (os.getenv("OPENAI_API_KEY"))
+    OPENAI_API_KEY = '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'
     
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask the 10K 💬")
@@ -35,14 +35,13 @@ def main():
         text += page.extract_text()
 
      # save the extracted text to a file
-      my_file = open("pdf_extract.txt", "w", encoding='utf-8') 
-      my_file.write (text)
-
+     # my_file = open("pdf_extract.txt", "w", encoding='utf-8') 
+     # my_file.write (text)
 
      # split into chunks
       text_splitter = CharacterTextSplitter(
         separator="\n",
-        chunk_size=1000,
+        chunk_size=1500,
         chunk_overlap=200,
         length_function=len
       )

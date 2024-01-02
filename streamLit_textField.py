@@ -32,10 +32,10 @@ def main():
       for page in pdf_reader.pages:
         text += page.extract_text()
 
+        st.write (text)
      # save the extracted text to a file
      # my_file = open("pdf_extract.txt", "w", encoding='utf-8') 
      # my_file.write (text)
-     st.write (text)
 
      # split into chunks
       text_splitter = CharacterTextSplitter(

@@ -36,6 +36,8 @@ def main():
      # my_file = open("pdf_extract.txt", "w", encoding='utf-8') 
      # my_file.write (text)
 
+    st.write (text)
+
      # split into chunks
       text_splitter = CharacterTextSplitter(
         separator="\n",

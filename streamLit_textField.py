@@ -1,11 +1,7 @@
-import dotenv
 from dotenv import load_dotenv
 import streamlit as st
-
-import PyPDF2
 from PyPDF2 import PdfReader
 import os
-
 import langchain
 import openai
 from langchain.text_splitter import CharacterTextSplitter
@@ -16,11 +12,11 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
 def main():
-    load_dotenv()
-    print (os.getenv("OPENAI_API_KEY"))
-    OPENAI_API_KEY = 'there is your key'
-    
-    st.set_page_config(page_title="Ask your PDF")
+    #load_dotenv()
+    #print (os.getenv("OPENAI_API_KEY"))
+    #OPENAI_API_KEY = 'there is your key'
+    print ('--------------app start ----------')
+    st.set_page_config(page_title="Ask the 10K  PDF")
     st.header("Ask the 10K 💬")
     
     # upload file

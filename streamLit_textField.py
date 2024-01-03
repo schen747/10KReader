@@ -12,7 +12,7 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
 def main():
-    #load_dotenv()
+    load_dotenv()
     #print (os.getenv("OPENAI_API_KEY"))
     #OPENAI_API_KEY = 'there is your key'
     print ('--------------app start ----------')

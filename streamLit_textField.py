@@ -18,7 +18,7 @@ from langchain.callbacks import get_openai_callback
 def main():
     load_dotenv()
     print (os.getenv("OPENAI_API_KEY"))
-    OPENAI_API_KEY = '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'
+    OPENAI_API_KEY = 'there is your key'
     
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask the 10K 💬")

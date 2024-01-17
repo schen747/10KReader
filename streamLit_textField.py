@@ -15,6 +15,7 @@ def main():
     #load_dotenv()
 
     OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+    
     print ('--------------app start ----------')
     st.set_page_config(page_title="Ask the 10K  PDF")
     st.header("Ask the 10K 💬")
@@ -28,11 +29,6 @@ def main():
       text = ""
       for page in pdf_reader.pages:
         text += page.extract_text()
-
-        #st.write (text)
-     # save the extracted text to a file
-     # my_file = open("pdf_extract.txt", "w", encoding='utf-8') 
-     # my_file.write (text)
 
      # split into chunks
       text_splitter = CharacterTextSplitter(

@@ -13,7 +13,7 @@ from langchain.callbacks import get_openai_callback
 
 def main():
     #load_dotenv()
-    #print (os.getenv("OPENAI_API_KEY"))
+
     OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
     print ('--------------app start ----------')
     st.set_page_config(page_title="Ask the 10K  PDF")
